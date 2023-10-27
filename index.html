@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Triangle Calculator</h1>
+        <form class="triangle-form">
+            <label for="side1">Enter the length of the first side:</label>
+            <input type="number" id="side1" name="side1" required>
+            <label for="side2">Enter the length of the second side:</label>
+            <input type="number" id="side2" name="side2" required>
+            <label for="side3">Enter the length of the third side:</label>
+            <input type="number" id="side3" name="side3" required>
+            <button type="submit" title="Calculate">Calculate</button>
+        </form>
+
+        <div class="results">
+            <h4>Perimeter = a + b + c</h4>
+            <p>Perimeter: <span id="perimeter">0</span></p>
+            <h4>Semi-perimeter = perimeter / 2</h4>
+            <p>Semi-perimeter: <span id="semiperimeter">0</span></p>
+            <h4>Area = square root of: semiperimeter * (semiperimeter - x ) * ( semiperimeter  - y ) *  (semiperimeter - z )</h4>
+            <p>Area: <span id="area">0</span></p>
+           <h3 id="NaNWarning"></h3>
+        </div>
+    </div>
+
+    <script src="java.js.java"></script>
+</body>
+</html>
